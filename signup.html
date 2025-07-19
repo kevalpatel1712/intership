@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins, sans-serif;
+}
+/* ...............................................1.......................................... */
+    .heading{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        height: 60px;   
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    .headingiconandimg{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        justify-items: center;
+        display: flex;
+        align-items: center;
+    }
+    .fa-bars{
+        padding-right: 0px;
+        padding-left: 0%;
+        font-size: 30px;
+        align-items: start;
+        width: 10%;
+    }
+    .imglogo{
+        width: 160px;
+    }
+    .hedingitem{
+        justify-content: space-around;
+    }
+    .hedingitems{
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 85px;
+        color: rgb(52, 52, 59);
+        padding: 15px;
+        padding-left: 20px;
+        text-decoration: none;
+    }
+    #hedingitemsdf{
+        color: #2e3842;
+    }
+    #hedingitemsdf:hover{
+        color: #4E7FFF;
+    }
+    .headingcontacts{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .fa-building{
+        padding: 10px;
+    }
+    #hedingitemshome{
+        color: #386CF0;
+    }
+    .headingcontactsi{
+        display: block;
+    }
+    .headingcontactsii{
+        display: block;
+    }
+    .hedingitems{
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 85px;
+        color: rgb(52, 52, 59);
+    }
+    .hedingitems:hover{
+        color:  #386CF0;
+    }
+    .headingbutton {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        padding: 0.9rem 2rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 500px;
+        overflow: hidden;
+        background: #386CF0;
+        color: #386CF0;
+        border: 1px #386CF0 solid;
+    }
+    .headingbutton a {
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 500px;
+    }
+    .headingbutton:hover a {
+    color: rgb(253, 253, 253);
+    }
+    .headingbutton::before,
+    .headingbutton::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    }
+    .headingbutton::before {
+    content: "";
+    background: #ffffff;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    .headingbutton:hover::before {
+    transform: translate3d(100%, 0, 0);
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1000;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .dropdown-content a {
+        color: rgb(52, 52, 59);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        font-family: Poppins, Helvetica, sans-serif;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: #386CF0;
+        text-decoration: none; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+ /* ...............................................2.......................................... */
+ .sign{
+    background-color: #F8F9FA;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.sign1{
+    margin-left: 16.666667%;
+}
+.sign1>div{
+    margin-bottom: 1.5rem !important;
+    font-family :Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 500;
+    Color : rgb(39, 43, 65);
+    Size : 20px;
+    font-size: 20px;
+    line-height : 24px;
+}
+.sign2{
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 25px;
+    width: 30%;
+}
+.sign2i{
+    font-family : Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 500;
+    Color : rgb(39, 43, 65);
+    font-size :18px;
+    line-height :22px;
+    margin: 0px 0px 3px;
+    margin-bottom: 20px;
+}
+.sign2iia{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate; 
+    padding-bottom: 10px;
+}
+.sign2iia>input{
+    padding: 12px 6px 12px;
+    text-align: center;
+    border: 1px solid lightgray;
+    width: 95%;
+}
+.sign2ii1{
+    text-align: right !important;
+    margin-bottom: 10px;
+}
+.sign2ii1>a{
+    text-decoration: none;
+    font-family : Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 400;
+    Color : #3D3D3D;
+    Size : 13px;
+    Line-height : 20px;
+}
+.sign2ii1>a:hover{
+    text-decoration: none;
+    font-family : Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 400;
+    Color : rgb(57, 108, 240);
+    Size : 13px;
+    Line-height : 20px;
+}
+.sign2ii2>a{
+  text-decoration: none;
+}
+.sign2ii2>a>button{
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #4E7FFF;
+  width: 100%;
+  font-family : Poppins, sans-serif;
+  font-style : normal;
+  font-weight : 500;
+  font-size: 18px;
+  Color : rgb(57, 108, 240);
+  Line-height : 27px;
+}
+.sign2ii3 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.sign2ii3span {
+  flex: 1;
+  height: 1px;
+  background-color: #d4d4d4;
+  margin: 0 10px;
+}
+.sign2ii3spanor {
+  white-space: nowrap;
+  font-family : Poppins, sans-serif;
+  font-style : normal;
+  font-weight : 400;
+  Color : rgb(212, 212, 212);
+  Size : 15px;
+  Line-height : 23px;
+}
+.sign2ii4{
+  text-align: center;
+}
+.sign2ii4>a{
+    text-decoration: none;
+    font-family : Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 400;
+    Color : #3D3D3D;
+    Size : 15px;
+    Line-height : 23px;
+    text-align: center;
+}
+.sign2ii4>a:hover{
+  text-align: center;
+    text-decoration: none;
+    font-family : Poppins, sans-serif;
+    font-style : normal;
+    font-weight : 400;
+    Color : rgb(57, 108, 240);
+    Size : 15px;
+    Line-height : 23px;
+}
+.sign2ii2>a>button{
+    background-color: #027BFF;
+    color: rgb(255, 255, 255);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.sign2ii2>a>button:hover{
+    background-color: #ffffff;
+    color: #027BFF;
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+ /* ...............................................3.......................................... */
+    .footer {
+        background-color: #1F1F1F;
+        color: white;
+        padding: 60px 0 30px 0;
+        position: relative;
+        margin-top: 15px;
+    }
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    .company-info {
+        max-width: 300px;
+    }
+    .ka
+    {
+        height: 56px;
+        width: 250px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .company-description {
+        color: #FFFFFF;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        background-color: #404040;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+    }
+    .social-icons a:hover {
+        background-color: #027BFF;
+        color: white;
+        transform: translateY(-2px);
+    }
+    .footer-section h3 {
+        font-family: Poppins, sans-serif;
+        font-size: 25px;
+        margin-bottom: 40px;
+        position: relative;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .footer-section h3::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background-color: #386CF0;
+        border-radius: 1px;
+    }
+    .footer-section ul {
+        list-style: none;
+    }
+    .footer-section ul li {
+        margin-bottom: 14px;
+    }
+    .footer-section ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 17px;
+        position: relative;
+        padding-left: 15px;
+    }
+    .footer-section ul li a::before {
+        content: '❯';
+        position: absolute;
+        left: 0;
+        color: #027BFF;
+        font-size: 0.8rem;
+    }
+    .footer-section ul li a:hover {
+        color: #ffffff;
+        padding-left: 23px;
+    }
+    .contact-info {
+        font-size: 0.95rem;
+    }
+    .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+    .contact-item i {
+        color: #027BFF;
+        font-size: 1.1rem;
+        margin-top: 2px;
+        min-width: 20px;
+    }
+    .contact-item .contact-text {
+        line-height: 1.5;
+    }
+    .contact-label {
+        color: white;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .footer-bottom {
+        border-top: 1px solid #404040;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 0.9rem;
+    }
+    .footer-links {
+        display: flex;
+        gap: 30px;
+    }
+    .footer-links a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-links a:hover {
+        color: #027BFF;
+    }
+    .ka{
+      height: 140px;
+    }
+    .logo{
+      margin-bottom: 0px;
+      margin-top: -40px;
+    }
+    .dot{
+      display: none;
+    }
+/* ...............................................1.......................................... */
+@media (min-width: 300px) and (max-width: 480px)  {
+    /* ...............................................1.......................................... */
+    .headingiconandimg{
+        align-items: center;
+        position: relative;
+    }
+    .imglogo{
+        width: 160px;
+        padding-left: 0%;
+        padding-top: 0px;
+    }
+    .fa-bars{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .heading{
+    padding-top: 15px;
+    align-items: center;
+    }
+    .headingiconandimg{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0%;
+    }
+    .hedingitems{
+        display: none;
+    }
+    .headingcontacts{
+        display: none;
+    }
+    .headingbutton{
+        display: none;
+    }
+    /* ...............................................2.......................................... */
+    .sign1{
+        display: none;
+      }
+      .sign2{
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        padding: 25px;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+    /* ...............................................3.......................................... */
+    .footer{
+        display: none;
+    }
+}
+/* ...............................................2.......................................... */
+@media (min-width: 481px) and (max-width: 767px){
+    /* ...............................................1.......................................... */
+    .headingiconandimg{
+        align-items: center;
+    }
+    .imglogo{
+        width: 160px;
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+    .fa-bars{
+        padding-left: 10px;
+    }
+    .hedingitems{
+        display: none;
+    }
+    .headingcontacts{
+        display: none;
+    }
+    .headingbutton{
+        display: none;
+    }
+    /* ...............................................2.......................................... */
+    .sign1{
+        display: none;
+      }
+      .sign2{
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        padding: 25px;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+    /* ...............................................3.......................................... */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: left;
+        }
+    
+        .footer-container {
+        padding: 0 20px;
+        }
+    
+        .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        }
+    
+        .footer-links {
+        gap: 20px;
+        }
+    
+        .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+        }
+    
+        .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        }
+}
+/* ...............................................3.......................................... */
+@media (min-width: 768px) and (max-width: 1050px) {
+    /* ...............................................1.......................................... */
+     .headingiconandimg{
+        width: 70%;
+        align-items: center;
+     }
+    .imglogo{
+        width: 160px;
+        padding-left: 10px;
+        padding-top: 0px;
+    }
+    .fa-bars{
+        padding-left: 10px;
+    }
+    .hedingitems{
+        display: none;
+    }
+    .headingcontacts{
+        display: none;
+    }
+    .hedingitem{
+        display: none;
+    }
+    .headingbuttondiv{
+        width: 30%;
+        justify-items: end;  
+        align-items: end;
+        padding-top: 10px;
+    }
+    /* ...............................................2.......................................... */
+    .sign1{
+        display: none;
+      }
+      .sign2{
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        padding: 25px;
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+      }
+    /* ...............................................3.......................................... */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }  
+    .footer-container {
+        padding: 0 30px;
+    }
+}
+/* ...............................................4.......................................... */
+@media (min-width: 1051px) and (max-width: 1120px) {
+    /* ...............................................1.......................................... */
+    .headingiconandimg{
+        padding-left: 20px;
+    }
+    .heading{
+        padding-top: 20px;
+    }
+    .headingiconandimg{
+        width: 30%;
+    }
+    .imglogo{
+        width: 160px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .hedingitem{
+        justify-content: space-around;
+    }
+    .hedingitems{
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 85px;
+        color: rgb(52, 52, 59);
+    }
+    .headingcontacts{
+        display: none;
+    }     
+    .headingbuttondiv{
+        display: none;
+    }
+    /* ...............................................2.......................................... */
+    /* ...............................................3.......................................... */
+}
+/* ...............................................5.......................................... */
+@media (min-width: 1121px) and (max-width: 1420px){
+        /* ...............................................1.......................................... */
+        .heading{
+            padding-top: 20px;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .headingiconandimg{
+            width: 15%;
+        }
+        .imglogo{
+            width: 160px;
+        }
+        .fa-bars{
+            display: none;
+        }
+        .hedingitem{
+            justify-content: space-around;
+        }
+        .hedingitems{
+            font-family: Poppins, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 85px;
+            color: rgb(52, 52, 59);
+        }
+        .headingcontacts{
+            display: none;
+        }     
+        .headingbuttondiv{
+            width: 20%;
+        }
+    /* ...............................................2.......................................... */
+    /* ...............................................3.......................................... */
+}
+/* ...............................................6.......................................... */
+@media (min-width: 1421px) {
+    /* ...............................................1.......................................... */
+    .heading{
+        padding-top: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .headingiconandimg>a{
+        display: none;
+    }
+    .imglogo{
+        width: 160px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .heading{
+        display: flex;
+        padding-top: 15px;
+        align-items: center;
+    }
+    /* ...............................................2.......................................... */
+    /* ...............................................3.......................................... */
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ...............................................1.......................................... -->
+    <div class="heading">
+        <div class="headingiconandimg">
+            <a href=""><i class="fa-solid fa-bars" style="color: #5BCEAD;"></i></a>
+            <img class="imglogo" src="./IMG/Adobe Express - file.png" alt="">
+        </div>
+        <div class="hedingitem">
+            <a href="./doctor.html" id="hedingitemshome" class="hedingitems">Home</a>
+            <div class="dropdown">
+                <a href="#" class="hedingitems dropdown-toggle">Doctors <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="./BookAppointment.html">Book Appointment</a>
+                </div>
+              </div>              
+            <a href="./hospital.html" class="hedingitems">Hospitals</a>
+            <div class="dropdown">
+                <a href="#" class="hedingitems dropdown-toggle">Franchisee <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./Franchisee1.html">Register</a>
+                    <a href="./Franchisee2.html">SMS Booking</a>
+                </div>
+            </div>            
+            <a href="./booktest.html" class="hedingitems">Book Test</a>
+            <a href="./Surgery.html" class="hedingitems">Surgery</a>
+            <a href="./Order-medicine.html" class="hedingitems">Order Medicine</a>
+        </div>
+        <div class="headingcontacts">
+            <i class="fa-solid fa-building" style="color: #30ACFF;"></i>
+            <div class="headingcontacts1">
+                <span class="headingcontactsi">Contact</span>
+                <span class="headingcontactsii">+91 943 520 0024</span>
+            </div>
+        </div>
+        <div class="headingbuttondiv">
+            <button class="headingbutton">
+                <a href="./signup.html">Sign In / Signup</a>
+            </button>
+        </div>
+    </div>
+    <!-- ...............................................2.......................................... -->
+    <div class="sign">
+        <div class="sign1">
+            <div>Online Doctor Appointment</div>
+            <img src="https://www.quickobook.com/assets/img/login_side.png" alt="">
+        </div>
+        <div class="sign2">
+            <div class="sign2i">Join HealthHub</div>
+            <div class="sign2ii">
+                <div class="sign2iia">
+                    <input type="text" placeholder="Registered Mobile Number">
+                </div>
+                <div class="sign2ii1">
+                    <a href="#">Login Using Password</a>
+                </div>
+                <div class="sign2ii2">
+                    <a href="#"><button>Get OTP</button></a>
+                </div>
+                <div class="sign2ii3">
+                    <div class="sign2ii3span"></div>
+                    <span class="sign2ii3spanor">or</span>
+                    <div class="sign2ii3span"></div>
+                </div>
+                <div class="sign2ii4">
+                    <a href="#">Don't have an account? Signup here</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- ...............................................3.......................................... -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section company-info">
+                    <div class="logo">
+                        <img src="./IMG/Adobe Express - file.png" class="ka" alt="">
+  
+                    </div>
+                    <p class="company-description">
+                      HealthHub is a registered start up company empaneled with 10000+ Doctors, 500+ Hospitals, lives touched of more than 2 Million patients.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+  
+                <!-- For Information -->
+                <div class="footer-section">
+                    <h3>For Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Booking Guide</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Release</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+  
+                <!-- Helpful Links -->
+                <div class="footer-section">
+                    <h3>Helpful Links</h3>
+                    <ul>
+                        <li><a href="./BookAppointment.html">Book Appointment</a></li>
+                        <li><a href="./BookAppointment.html">Search for doctors</a></li>
+                        <li><a href="./hospital.html">Search for hospitals</a></li>
+                        <li><a href="./booktest.html">Book Lab/Diagnostics</a></li>
+                        <li><a href="./Franchisee1.html">Franchisee Register</a></li>
+                        <li><a href="./Franchisee2.html">SMS Booking</a></li>
+                        <li><a href="./Surgery.html">Surgery</a></li>
+                    </ul>
+                </div>
+  
+                <!-- Contact Us -->
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            QWKPRO CONSULTANCY PVT LTD<br>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">+91 943 520 0024</div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <div class="contact-label">Customer Support :</div>
+                            support@HealthHub.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <div class="contact-label">Official Queries :</div>
+                            info@HealthHub.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    ©️ 2024 HealthHub All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms and Conditions</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

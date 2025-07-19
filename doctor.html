@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./doctor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ...............................................1.......................................... -->
+    <div class="heading">
+      <div class="headingiconandimg">
+          <a href=""><i class="fa-solid fa-bars" style="color: #5BCEAD;"></i></a>
+          <img class="imglogo" src="./IMG/Adobe Express - file.png" alt="">
+      </div>
+      <div class="hedingitem">
+          <a href="./doctor.html" id="hedingitemshome" class="hedingitems">Home</a>
+          <div class="dropdown">
+              <a href="#" class="hedingitems dropdown-toggle">Doctors <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="./BookAppointment.html">Book Appointment</a>
+              </div>
+            </div>              
+          <a href="./hospital.html" class="hedingitems">Hospitals</a>
+          <div class="dropdown">
+              <a href="#" class="hedingitems dropdown-toggle">Franchisee <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                  <a href="./Franchisee1.html">Register</a>
+                  <a href="./Franchisee2.html">SMS Booking</a>
+              </div>
+          </div>            
+          <a href="./booktest.html" class="hedingitems">Book Test</a>
+          <a href="./Surgery.html" class="hedingitems">Surgery</a>
+          <a href="./Order-medicine.html" class="hedingitems">Order Medicine</a>
+      </div>
+      <div class="headingcontacts">
+          <i class="fa-solid fa-building" style="color: #30ACFF;"></i>
+          <div class="headingcontacts1">
+              <span class="headingcontactsi">Contact</span>
+              <span class="headingcontactsii">+91 943 520 0024</span>
+          </div>
+      </div>
+      <div class="headingbuttondiv">
+          <button class="headingbutton">
+              <a href="./signup.html">Sign In / Signup</a>
+          </button>
+      </div>
+  </div>
+    <!-- ...............................................2.......................................... -->
+    <div class="imgs">
+        <div class="imgheading">
+            <div class="imgheadingi">
+                View Doctors, Book an Appointment
+            </div>
+            <div class="imgheadingii">
+                Find the best doctors, clinics & hospitals in the city nearest to you.
+            </div>
+        </div>    
+        <div class="imginput">
+            <div class="imginputi">
+                <div class="imginputibox">
+                    <div class="imginputiboxgroup">
+                            <i class='fas fa-map-marker-alt'></i> 
+                        <input
+                          class="imginputiboxgroupclass"
+                          type="search"
+                          placeholder="Search..."
+                          name="state"
+                          list="state"
+                        />
+                    </div>
+                         <datalist id="state">
+                            <option value="Andhra Pradesh">
+                            <option value="Arunachal Pradesh">
+                            <option value="Assam">
+                            <option value="Bihar">
+                            <option value="Chhattisgarh">
+                            <option value="Goa">
+                            <option value="Gujarat">
+                            <option value="Haryana">
+                            <option value="Himachal Pradesh">
+                            <option value="Jharkhand">
+                            <option value="Karnataka">
+                            <option value="Kerala">
+                            <option value="Madhya Pradesh">
+                            <option value="Maharashtra">
+                            <option value="Manipur">
+                            <option value="Meghalaya">
+                            <option value="Mizoram">
+                            <option value="Nagaland">
+                            <option value="Odisha">
+                            <option value="Punjab">
+                            <option value="Rajasthan">
+                            <option value="Sikkim">
+                            <option value="Tamil Nadu">
+                            <option value="Telangana">
+                            <option value="Tripura">
+                            <option value="Uttar Pradesh">
+                            <option value="Uttarakhand">
+                            <option value="West Bengal">
+                        </datalist>
+                <span class="imginputiboxspan">Select Locatiocn</span>
+                </div>
+            </div>
+            <div class="imginputii">
+                <div class="imginputiiboxgroup">
+                    <div class="imginputiiboxgroupsurchdiv">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #A3A3A3;"></i>
+                    </div>
+                    <input
+                        class="imginputiiboxgroupclass"
+                        type="search"
+                        placeholder="Search Doctors,Clinics,Specialization,Symptom Etc"
+                    />
+                </div>
+                <span class="imginputiiboxspan">Like : Diabetologist etc</span>
+            </div>
+            <div class="imginputiii">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ...............................................3.......................................... -->
+    <div class="introduction">
+        <div class="introductionspan">
+          <div class="introductionspani">Largest Healthcare Network Across East India</div>
+          <div class="introductionspanii">Find best doctors across specialities or hospitals in your city.</div>
+        </div>
+        <div class="introductiondiv">
+          <div class="introductiondivs">
+            <div class="introductiondivsdivsimg">
+              <img src="https://www.quickobook.com/assets/img/promo_test.jpg" alt="">
+            </div>
+            <div class="introductiondivsdivsinfo">
+              <div class="introductiondivsdivsinfoi">Book Lab Test</div>
+              <div class="introductiondivsdivsinfoii">It's fast, easy and secure</div>
+              <button class="introductiondivsdivsinfobutton"><a href="./booktest.html">Find Diagnostic Center</a></button>
+              <div class="introductiondivsdivsinfoiii"><i class="fa-solid fa-tags"></i> Get Upto 25% OFF On Lab Test</div>
+            </div>
+          </div>
+          <div class="introductiondivs">
+            <div class="introductiondivsdivsimg">
+              <img src="https://www.quickobook.com/assets/img/appointment.jpg" alt="">
+            </div>
+            <div class="introductiondivsdivsinfo">
+              <div class="introductiondivsdivsinfoi">Book Appointment</div>
+              <div class="introductiondivsdivsinfoii">For hospital & clinical admissions.</div>
+              <button class="introductiondivsdivsinfobutton"><a href="./BookAppointment.html">Find Doctor Now</a></button>
+            </div>
+          </div>
+          <div class="introductiondivs">
+            <div class="introductiondivsdivsimg">
+              <img src="https://www.quickobook.com/assets/img/medicines.jpg" alt="">
+            </div>
+            <div class="introductiondivsdivsinfo">
+              <div class="introductiondivsdivsinfoi">Buy Medicine</div>
+              <div class="introductiondivsdivsinfoii">We got all your health needs covered!</div>
+              <button class="introductiondivsdivsinfobutton"><a href="./Order-medicine.html">Buy Now</a></button>
+              <div class="introductiondivsdivsinfoiii"><i class="fa-solid fa-tags"></i> Get Upto 25% OFF On Lab Test</div>
+            </div>
+          </div>
+          <div class="introductiondivs">
+            <div class="introductiondivsdivsimg">
+              <img src="https://www.quickobook.com/assets/img/surgery.jpg" alt="">
+            </div>
+            <div class="introductiondivsdivsinfo">
+              <div class="introductiondivsdivsinfoi">SURGERY ASSISTANCE</div>
+              <div class="introductiondivsdivsinfoii">For best and affordable Surgical Treatment.</div>
+              <button class="introductiondivsdivsinfobutton"><a href="./Surgery.html">Consult Now</a></button>
+              <div class="introductiondivsdivsinfoiii"><i class="fa-solid fa-tags"></i> Get Upto 15% Savings</div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="introductionimg">
+          <div class="introductionimgdiv">
+            <a href="#"><img src="https://www.quickobook.com/uploads/media/6932-2022-06-02.png" alt=""></a>
+          </div>
+          <div class="introductionimgdiv">
+            <a href="#"><img src="https://www.quickobook.com/uploads/media/8091-2022-06-02.png" alt=""></a>
+          </div>
+          <div class="introductionimgdiv">
+            <a href="#"><img src="https://www.quickobook.com/uploads/media/1722-2022-06-02.png" alt=""></a>
+          </div>
+        </div>
+    </div>
+     <!-- ...............................................4.......................................... -->
+    <div class="assets">
+      <div class="assetsspan">
+          <span class="assetsspani">Discover the Online Appointment!</span>
+          <span class="assetsspanii">A step-by-step guide to build an on-demand appointment for patients</span>
+      </div>
+      <div class="assetssdiv">
+          <div class="assetssdivi">
+              <div class="assetssdivround"></div>
+              <div class="assetssdivispan">
+                  <span class="assetssdivispani">Find a Doctor</span>
+                  <span class="assetssdivispanii">With more than 1000+ doctors and on mission to provide best care Health Care Service</span>
+              </div>
+          </div>
+          <div class="assetssdivii">
+              <div class="assetssdivround"></div>
+              <div class="assetssdivispan">
+                  <span class="assetssdivispani">View Doctor</span>
+                  <span class="assetssdivispanii">Share your health concern here and we shall assign you a top doctor across the North East</span>
+              </div>
+          </div>
+         
+          <div class="assetssdiviii">
+              <div class="assetssdivispan">
+                  <span class="assetssdivispani">Book a visit</span>
+                  <span class="assetssdivispanii">Book your time slot with doctor from your comfort zone</span>
+              </div>
+          </div>
+      </div>
+        <div id="headingbuttondiv">
+        <div id="headingbuttondiv">
+          <button id="headingbutton">
+              <a href="./BookAppointment.html">Find Doctor</a>
+              <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ................................................5.......................................... -->
+    <div class="Specialities">
+      <div class="Specialitiesi">
+        <h2>Clinic and Specialities</h2>
+        <p>Find experienced doctors across all specialties</p>
+      </div>
+      <div class="Specialitiesii">
+        <div class="Specialitiesii1">
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-01.png"
+                alt="Urology"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Urology</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-02.png"
+                alt="Neurology"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Neurology</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-03.png"
+                alt="Orthopedic"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+              
+            </div>
+            <p class="Specialitiesdiviipispani2">Orthopedic</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-04.png"
+                alt="Cardiologist"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Cardiologist</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-05.png"
+                alt="Dentist"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Dentist</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-06.png"
+                alt="Consultant Physician"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Consultant Physician</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/general_physician.png"
+                alt="General Physician"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">General Physician</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-01.png"
+                alt="Urology"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Urology</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-02.png"
+                alt="Neurology"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Neurology</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-03.png"
+                alt="Orthopedic"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Orthopedic</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-04.png"
+                alt="Cardiologist"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Cardiologist</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-05.png"
+                alt="Dentist"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Dentist</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/specialities-06.png"
+                alt="Consultant Physician"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">Consultant Physician</p>
+          </div>
+          <div class="Specialitiesdiviipi">
+            <div class="Specialitiesdiviipispani1">
+              <img
+                src="https://www.quickobook.com/assets/img/specialities/general_physician.png"
+                alt="General Physician"
+              />
+              <svg height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                <circle r="8" cx="12.5" cy="12.5" fill="#027BFF" />
+              </svg>
+            </div>
+            <p class="Specialitiesdiviipispani2">General Physician</p>
+          </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+      </div>
+    </div>
+    <!-- ................................................6.......................................... -->
+    <div class="video">
+      <div class="videomain">
+        <div class="videomaini">
+          <div class="videomaini1">
+            <div class="videomaini1row">
+              <div class="videomaini1row2">
+                <img
+                  src="https://www.quickobook.com/assets/img/video_prev.jpg"
+                  alt="Video Preview"
+                />
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+              </div>
+              <div class="videomaini1row1">
+                <span>Manage your health care</span>
+                <p>Know about <span>HealthHub</span> health services</p>
+                <div id="headingbuttondiv1">
+                  <button id="headingbutton1">
+                    <a href="#">See More </a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ................................................7.......................................... -->
+    <div class="delivery">
+      <div class="delivery1">
+        <p>Get all your medicines.</p>
+        <p>Everytime. On time.</p>
+        <span>Guaranteed availability</span>
+        <span>Home delivery in 24hrs</span>
+        <a href="./Order-medicine.html">Order Medicines</a>
+      </div>
+      <div class="delivery2">
+        <img src="https://www.quickobook.com/assets/img/order.svg" alt="Medicine Delivery">
+      </div>
+    </div>
+    <!-- ................................................8.......................................... -->
+    <section class="health-banner">
+      <div class="banner-container">
+          <div class="banner-left">
+              <h1>
+                  Get <span class="highlight-text">Every Single</span> Updates Here.
+              </h1>
+          </div>
+          <div class="banner-right">
+              <p>
+                  Online Health Information Library is for general people, patients, their families and friends who seek information on disease, procedure and certain medications.
+              </p>
+          </div>
+      </div>
+  </section>
+    <!-- ................................................9.......................................... -->
+    <div class="footer">
+      <div class="footer-container">
+          <div class="footer-content">
+              <div class="footer-section company-info">
+                  <div class="logo">
+                      <img src="./IMG/Adobe Express - file.png" class="ka" alt="">
+
+                  </div>
+                  <p class="company-description">
+                    HealthHub is a registered start up company empaneled with 10000+ Doctors, 500+ Hospitals, lives touched of more than 2 Million patients.
+                  </p>
+                  <div class="social-icons">
+                      <a href="#" aria-label="Facebook">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" aria-label="Twitter">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" aria-label="LinkedIn">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="#" aria-label="Instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#" aria-label="YouTube">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>For Information</h3>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Booking Guide</a></li>
+                      <li><a href="#">Pharmacy</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Press Release</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h3>Helpful Links</h3>
+                  <ul>
+                      <li><a href="./BookAppointment.html">Book Appointment</a></li>
+                      <li><a href="./BookAppointment.html">Search for doctors</a></li>
+                      <li><a href="./hospital.html">Search for hospitals</a></li>
+                      <li><a href="./booktest.html">Book Lab/Diagnostics</a></li>
+                      <li><a href="./Franchisee1.html">Franchisee Register</a></li>
+                      <li><a href="./Franchisee2.html">SMS Booking</a></li>
+                      <li><a href="./Surgery.html">Surgery</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section contact-info">
+                  <h3>Contact Us</h3>
+                  <div class="contact-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="contact-text">
+                          QWKPRO CONSULTANCY PVT LTD<br>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-phone"></i>
+                      <div class="contact-text">+91 943 520 0024</div>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope"></i>
+                      <div class="contact-text">
+                          <div class="contact-label">Customer Support :</div>
+                          support@HealthHub.com
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope"></i>
+                      <div class="contact-text">
+                          <div class="contact-label">Official Queries :</div>
+                          info@HealthHub.com
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="copyright">
+                  ©️ 2024 HealthHub All rights reserved.
+              </div>
+              <div class="footer-links">
+                  <a href="#">Terms and Conditions</a>
+                  <span>|</span>
+                  <a href="#">Privacy Policy</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
